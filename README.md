@@ -20,7 +20,7 @@ Sebuah proyek data science untuk memprediksi kelulusan siswa berdasarkan faktor-
 student-performance-prediction/
 ├── data/                  # Dataset mentah dan hasil pembersihan
 ├── notebooks/             # Notebook eksplorasi dan model
-├── models/                # Model machine learning yang disimpan
+├── model/                # Model machine learning yang disimpan
 ├── images/                # Visualisasi penting seperti feature importance
 ├── requirements.txt       # Daftar library Python yang digunakan
 └── README.md              # Deskripsi proyek
