@@ -88,25 +88,5 @@ Gambar berikut menunjukkan fitur-fitur paling berpengaruh terhadap prediksi kelu
 
 ## 🙋‍♂️ Tentang Pembuat
 
-Proyek ini dibuat oleh **Gading Khairlambang** sebagai bagian dari pengembangan portofolio dan pembelajaran praktis di bidang **data mining & machine learning**.
-
----
-
-# 🎓 Student Performance Prediction (EN)
-
-This is a complete data science project to predict student pass/fail status based on academic and socio-demographic features.
-
-## Highlights
-- Clean and explore real-world data
-- Build a classification model (Random Forest)
-- Identify key features that influence outcomes
-- Save model for reuse and deployment
-
-## Tech Stack
-Python, Jupyter, pandas, seaborn, scikit-learn, joblib
-
-## How to Use
-Clone repo → install requirements → run notebooks → analyze results
-
-## Author
 Created by **Gading Khairlambang** – aspiring data scientist 🚀
+
