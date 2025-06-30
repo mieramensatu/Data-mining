@@ -111,3 +111,17 @@ student-performance-prediction/
 ## 🙋‍♂️ Author
 
 Created by **Gading Khairlambang** for portfolio and learning purpose.
+
+## 🖼️ Visualisasi Penting
+
+### 🔹 Feature Importance
+
+Gambar berikut menunjukkan fitur-fitur yang paling mempengaruhi hasil prediksi apakah seorang siswa akan lulus atau tidak.
+
+![Feature Importance](images/feature_importance.png)
+
+**Penjelasan:**
+
+- Fitur seperti `previous_grades` dan `study_hours_per_week` memiliki kontribusi paling besar terhadap hasil prediksi.
+- Artinya, semakin tinggi nilai sebelumnya dan jam belajar per minggu, semakin besar kemungkinan siswa untuk lulus.
+- Sedangkan fitur seperti `parent_education_level` mungkin memiliki pengaruh lebih rendah.
