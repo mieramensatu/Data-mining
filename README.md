@@ -1,127 +1,112 @@
-# 🎓 Prediksi Performa Siswa
 
-Proyek ini menggunakan dataset siswa sebanyak 40.000 data untuk memprediksi apakah seorang siswa akan **lulus** atau tidak, berdasarkan fitur-fitur seperti jam belajar, kehadiran, pendidikan orang tua, dan aktivitas ekstrakurikuler.
+# 🎓 Prediksi Performa Siswa dengan Machine Learning
 
-## 📌 Tujuan
-
-- Memahami faktor-faktor yang mempengaruhi performa siswa
-- Melakukan eksplorasi dan pembersihan data dunia nyata
-- Membangun model machine learning untuk prediksi kelulusan siswa
-- Mengetahui fitur-fitur yang paling memengaruhi hasil prediksi
-
-## 📁 Struktur Proyek
-
-```
-student-performance-prediction/
-├── data/
-├── notebooks/
-├── models/
-├── images/
-├── requirements.txt
-└── README.md
-```
-
-## 📊 Tentang Dataset
-
-- 📄 Sumber: [Kaggle - Student Performance Prediction](https://www.kaggle.com/datasets/souradippal/student-performance-prediction)
-- 💡 Jumlah siswa: 40.000
-- 🎯 Target: Kolom `Passed` (Yes/No)
-- 🧾 Fitur: Jam belajar, kehadiran, nilai sebelumnya, ekstrakurikuler, dan lainnya
-
-## ⚙️ Teknologi yang Digunakan
-
-- Python 3.x
-- Pandas, NumPy, Matplotlib, Seaborn
-- Scikit-learn
-- Jupyter Notebook
-
-## 📈 Model
-
-- Algoritma: Random Forest Classifier
-- Evaluasi: Classification Report, Confusion Matrix
-- Output: Model yang sudah dilatih disimpan di `models/student_pass_model.pkl`
-
-## 🚀 Cara Menjalankan Proyek
-
-1. Clone repository ini
-2. Install dependency:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Jalankan notebook dari folder `notebooks/`
-
-## 🙋‍♂️ Pembuat
-
-Dibuat oleh **Gading Khairlambang** sebagai proyek portofolio dan pembelajaran data mining.
+Sebuah proyek data science untuk memprediksi kelulusan siswa berdasarkan faktor-faktor penting seperti jam belajar, kehadiran, nilai sebelumnya, dan latar belakang pendidikan orang tua.
 
 ---
 
-# 🎓 Student Performance Prediction
+## 📌 Tujuan Proyek
 
-This project uses a dataset of 40,000 student records to predict whether a student will **pass** based on features such as study hours, attendance, parental education, and extracurricular activity.
+✅ Menjelajahi dan memahami faktor-faktor yang berpengaruh terhadap kelulusan siswa  
+✅ Melakukan pembersihan data dan eksplorasi visualisasi  
+✅ Membangun model Machine Learning untuk prediksi kelulusan  
+✅ Menginterpretasikan fitur-fitur terpenting yang mempengaruhi keputusan model
 
-## 📌 Objectives
+---
 
-- Understand the factors that influence student performance
-- Perform real-world data exploration and cleaning
-- Build a machine learning model to predict student passing status
-- Identify the most important features for prediction
-
-## 📁 Project Structure
+## 🗂️ Struktur Direktori Proyek
 
 ```
 student-performance-prediction/
-├── data/
-├── notebooks/
-├── models/
-├── images/
-├── requirements.txt
-└── README.md
+├── data/                  # Dataset mentah dan hasil pembersihan
+├── notebooks/             # Notebook eksplorasi dan model
+├── models/                # Model machine learning yang disimpan
+├── images/                # Visualisasi penting seperti feature importance
+├── requirements.txt       # Daftar library Python yang digunakan
+└── README.md              # Deskripsi proyek
 ```
 
-## 📊 Dataset Overview
+---
 
-- 📄 Source: [Kaggle - Student Performance Prediction](https://www.kaggle.com/datasets/souradippal/student-performance-prediction)
-- 💡 Total students: 40,000
-- 🎯 Target: `Passed` column (Yes/No)
-- 🧾 Features: Study Hours, Attendance, Previous Grades, Extracurricular, etc.
+## 📊 Tentang Dataset
 
-## ⚙️ Technologies Used
+- 📌 Sumber: [Kaggle - Student Performance Prediction](https://www.kaggle.com/datasets/souradippal/student-performance-prediction)
+- 📈 Jumlah data: 40.000 siswa
+- 🎯 Target prediksi: `Passed` (Yes / No)
+- 📋 Fitur: `Study Hours`, `Attendance Rate`, `Previous Grades`, `Extracurricular`, `Parent Education`, dll.
+
+---
+
+## 🧰 Teknologi & Tools
 
 - Python 3.x
-- Pandas, NumPy, Matplotlib, Seaborn
-- Scikit-learn
 - Jupyter Notebook
+- Pandas, NumPy, Seaborn, Matplotlib
+- Scikit-learn
+- Joblib (untuk simpan model)
 
-## 📈 Model
+---
 
-- Algorithm: Random Forest Classifier
-- Evaluation: Classification Report, Confusion Matrix
-- Output: Trained model saved in `models/student_pass_model.pkl`
+## 🧠 Model Machine Learning
 
-## 🚀 How to Run
+- 📚 Algoritma: `RandomForestClassifier`
+- 🧪 Evaluasi: `Confusion Matrix`, `Classification Report`
+- 💾 Output: Model disimpan dalam `models/student_pass_model.pkl`
 
-1. Clone this repository
-2. Install requirements:
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+1. Clone repositori ini:
+   ```
+   git clone https://github.com/username/student-performance-prediction.git
+   ```
+2. Masuk ke direktori dan install dependencies:
    ```
    pip install -r requirements.txt
    ```
-3. Run notebooks from the `notebooks/` directory
+3. Jalankan notebook:
+   - `01_exploration.ipynb` untuk eksplorasi dan pembersihan
+   - `02_model.ipynb` untuk training dan evaluasi model
 
-## 🙋‍♂️ Author
-
-Created by **Gading Khairlambang** for portfolio and learning purpose.
+---
 
 ## 🖼️ Visualisasi Penting
 
 ### 🔹 Feature Importance
 
-Gambar berikut menunjukkan fitur-fitur yang paling mempengaruhi hasil prediksi apakah seorang siswa akan lulus atau tidak.
+Gambar berikut menunjukkan fitur-fitur paling berpengaruh terhadap prediksi kelulusan siswa:
 
 ![Feature Importance](images/feature_importance.png)
 
-**Penjelasan:**
+**📌 Interpretasi:**
+- Fitur seperti `previous_grades` dan `study_hours_per_week` punya pengaruh paling besar.
+- Artinya, siswa dengan nilai bagus dan jam belajar tinggi cenderung lebih besar kemungkinannya untuk lulus.
+- Fitur seperti `parent_education_level` berpengaruh lebih kecil menurut model.
 
-- Fitur seperti `previous_grades` dan `study_hours_per_week` memiliki kontribusi paling besar terhadap hasil prediksi.
-- Artinya, semakin tinggi nilai sebelumnya dan jam belajar per minggu, semakin besar kemungkinan siswa untuk lulus.
-- Sedangkan fitur seperti `parent_education_level` mungkin memiliki pengaruh lebih rendah.
+---
+
+## 🙋‍♂️ Tentang Pembuat
+
+Proyek ini dibuat oleh **Gading Khairlambang** sebagai bagian dari pengembangan portofolio dan pembelajaran praktis di bidang **data mining & machine learning**.
+
+---
+
+# 🎓 Student Performance Prediction (EN)
+
+This is a complete data science project to predict student pass/fail status based on academic and socio-demographic features.
+
+## Highlights
+- Clean and explore real-world data
+- Build a classification model (Random Forest)
+- Identify key features that influence outcomes
+- Save model for reuse and deployment
+
+## Tech Stack
+Python, Jupyter, pandas, seaborn, scikit-learn, joblib
+
+## How to Use
+Clone repo → install requirements → run notebooks → analyze results
+
+## Author
+Created by **Gading Khairlambang** – aspiring data scientist 🚀
